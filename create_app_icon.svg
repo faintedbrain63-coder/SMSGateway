@@ -1,0 +1,91 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F3F4F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="messageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="1024" height="1024" rx="180" ry="180" fill="url(#backgroundGradient)"/>
+  
+  <!-- Phone device -->
+  <g transform="translate(312, 200)" filter="url(#shadow)">
+    <!-- Phone body -->
+    <rect x="0" y="0" width="200" height="360" rx="24" ry="24" fill="url(#phoneGradient)" stroke="#E5E7EB" stroke-width="2"/>
+    
+    <!-- Phone screen -->
+    <rect x="16" y="32" width="168" height="280" rx="12" ry="12" fill="#1F2937"/>
+    
+    <!-- Phone speaker -->
+    <rect x="70" y="12" width="60" height="8" rx="4" ry="4" fill="#9CA3AF"/>
+    
+    <!-- Phone home button -->
+    <circle cx="100" cy="336" r="12" fill="#9CA3AF"/>
+    
+    <!-- Screen content - message bubbles -->
+    <rect x="32" y="48" width="80" height="24" rx="12" ry="12" fill="url(#messageGradient)"/>
+    <rect x="88" y="80" width="80" height="24" rx="12" ry="12" fill="#374151"/>
+    <rect x="32" y="112" width="96" height="24" rx="12" ry="12" fill="url(#messageGradient)"/>
+    <rect x="72" y="144" width="96" height="24" rx="12" ry="12" fill="#374151"/>
+  </g>
+  
+  <!-- Gateway/Network signals -->
+  <g transform="translate(200, 300)">
+    <!-- Signal waves -->
+    <path d="M 0 100 Q 50 50 100 100" stroke="#10B981" stroke-width="8" fill="none" opacity="0.8"/>
+    <path d="M 0 100 Q 75 25 150 100" stroke="#10B981" stroke-width="6" fill="none" opacity="0.6"/>
+    <path d="M 0 100 Q 100 0 200 100" stroke="#10B981" stroke-width="4" fill="none" opacity="0.4"/>
+  </g>
+  
+  <g transform="translate(624, 300)">
+    <!-- Signal waves (mirrored) -->
+    <path d="M 200 100 Q 150 50 100 100" stroke="#10B981" stroke-width="8" fill="none" opacity="0.8"/>
+    <path d="M 200 100 Q 125 25 50 100" stroke="#10B981" stroke-width="6" fill="none" opacity="0.6"/>
+    <path d="M 200 100 Q 100 0 0 100" stroke="#10B981" stroke-width="4" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- SMS envelope icon -->
+  <g transform="translate(412, 580)" filter="url(#shadow)">
+    <!-- Envelope body -->
+    <rect x="0" y="20" width="200" height="120" rx="8" ry="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    
+    <!-- Envelope flap -->
+    <path d="M 0 20 L 100 80 L 200 20 Z" fill="url(#messageGradient)"/>
+    
+    <!-- Envelope lines -->
+    <line x1="20" y1="100" x2="120" y2="100" stroke="#9CA3AF" stroke-width="3"/>
+    <line x1="20" y1="115" x2="180" y2="115" stroke="#9CA3AF" stroke-width="3"/>
+  </g>
+  
+  <!-- Gateway icon -->
+  <g transform="translate(462, 720)">
+    <!-- Gateway base -->
+    <rect x="0" y="60" width="100" height="20" rx="10" ry="10" fill="#FFFFFF"/>
+    
+    <!-- Gateway towers -->
+    <rect x="10" y="20" width="12" height="60" rx="6" ry="6" fill="#FFFFFF"/>
+    <rect x="30" y="10" width="12" height="70" rx="6" ry="6" fill="#FFFFFF"/>
+    <rect x="50" y="0" width="12" height="80" rx="6" ry="6" fill="#FFFFFF"/>
+    <rect x="70" y="10" width="12" height="70" rx="6" ry="6" fill="#FFFFFF"/>
+    <rect x="90" y="20" width="12" height="60" rx="6" ry="6" fill="#FFFFFF"/>
+    
+    <!-- Signal dots -->
+    <circle cx="16" r="3" fill="#10B981"/>
+    <circle cx="36" r="3" fill="#10B981"/>
+    <circle cx="56" r="3" fill="#10B981"/>
+    <circle cx="76" r="3" fill="#10B981"/>
+    <circle cx="96" r="3" fill="#10B981"/>
+  </g>
+</svg>
